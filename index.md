@@ -4,7 +4,7 @@
 [Wiki2](https://github.com/AlanHolon/alanholon.github.io/wiki)
 
  <a href="https://www.google.it/">
-         <img alt="Qries" src="https://www.qries.com/images/banner_logo.png"
+         <img alt="Qries" src=""
          width=150" height="70"></a>
 
 You can use the [editor on GitHub](https://github.com/AlanHolon/alanholon.github.io/edit/main/index.md) to maintain and preview the content for your website in Markdown files.
