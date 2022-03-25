@@ -1,6 +1,7 @@
 ## Welcome to GitHub Pages
 
 [Wiki](https://github.com/AlanHolon/alanholon.github.io.wiki.git)
+[Wiki2](https://github.com/AlanHolon/alanholon.github.io/wiki)
 
 You can use the [editor on GitHub](https://github.com/AlanHolon/alanholon.github.io/edit/main/index.md) to maintain and preview the content for your website in Markdown files.
 
