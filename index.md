@@ -3,6 +3,10 @@
 [Wiki](https://github.com/AlanHolon/alanholon.github.io.wiki.git)
 [Wiki2](https://github.com/AlanHolon/alanholon.github.io/wiki)
 
+ <a href="https://www.google.it/">
+         <img alt="Qries" src="https://www.qries.com/images/banner_logo.png"
+         width=150" height="70"></a>
+
 You can use the [editor on GitHub](https://github.com/AlanHolon/alanholon.github.io/edit/main/index.md) to maintain and preview the content for your website in Markdown files.
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
