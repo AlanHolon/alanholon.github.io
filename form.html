@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>MateMajorana</title>
+    <link rel="stylesheet" href="form.css">
+  </head>
+<script src="varset.js"></script>
+<script src="client.js"></script>
+<body>
+<!--<div id="login_div"><label>PIN:</label><br><input type="text" id="pin_input">
+<button onclick="login(server_address)">Login</button></div>
+<div id="r_div" style="display:none;"><label>Inserisci la risposta:</label><br>
+<input type="text" id="r_input">
+<button onclick="inviarisp(server_address)">Invia risposta</button></div><br><br>-->
+<div id="logo"></div>
+<div id="infos">Inserisci il PIN</div>
+<div class="qst">
+  <div><button onclick="qstdn();">-</button></div>
+  <div><button class="lcd" id="qst">1</button></div>
+  <div><button onclick="qstup();">+</button></div>
+  <div><button class="lcd" id="display">0</button></div>
+</div>
+<div class="numbers">
+  <div><button onclick="dispnum(this.innerHTML);">7</button></div>
+  <div><button onclick="dispnum(this.innerHTML);">8</button></div>
+  <div><button onclick="dispnum(this.innerHTML);">9</button></div>
+  <div><button onclick="dispnum(this.innerHTML);">4</button></div>
+  <div><button onclick="dispnum(this.innerHTML);">5</button></div>
+  <div><button onclick="dispnum(this.innerHTML);">6</button></div>
+  <div><button onclick="dispnum(this.innerHTML);">1</button></div>
+  <div><button onclick="dispnum(this.innerHTML);">2</button></div>
+  <div><button onclick="dispnum(this.innerHTML);">3</button></div>
+  <div><button onclick="delnum();">del</button></div>
+  <div><button onclick="vai(server_address);">ent</button></div>
+  <div><button onclick="dispnum(this.innerHTML);">0</button></div>
+</div>
+<div id="r_feedback"></div>
+<div id="annulla"><button onclick="annulla();">Vuoi annullare la risposta?</button></div>
+</body>
+</html>

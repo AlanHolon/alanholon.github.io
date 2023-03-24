@@ -1,3 +1,5 @@
+var speed = 3;
+
 function getcookie(x) {
 	let cookiearray = document.cookie.split(";");
 	for (let i = 0; i < cookiearray.length; i++) {
@@ -13,25 +15,25 @@ function getcookie(x) {
     let pos = (da.getTime() % 15000) / 20;
 }*/
 const mid = document.getElementById("mid").style;
-let posvib = 0;
+/* let posvib = 0;
 /* let pos = 0;
 if (getcookie("pos") > 0) {pos = getcookie("pos");}*/
-function vib(x) {
+/* function vib(x) {
 	if (x > 50) {return 0;} else {return Math.sin(x)*10/x;}
-}
+}*/
 function frame() {
 /*    if (pos == 750) {pos = 0;}
     pos++;*/
     const da = new Date();
-    let pos = (da.getTime() % 15000) / 20;
-    mid.top = -30 - pos*0.4 + 'vh';
+    let pos = ((da.getTime()*speed) % 30000) / 1000;
+    mid.top = - pos*sqlen + 'vh';
 };
-function framevib() {
+/*function framevib() {
 	if (posvib == 50) {clearInterval(idvib);}
 	posvib++;
 	mid.left = vib(posvib) + 3 + "vw";
-}
-const id = setInterval('frame()', 16);
+}*/
+const id = setInterval('frame()', 5);
 /*const idvib = setInterval('framevib()', 20);*/
 
 /* Anima podio */
@@ -147,20 +149,21 @@ if ((podlist.trim() != getcookie("pod")) || (getcookie("tpod") > 1111)) {
 /* Anima tempo */
 
 var n = 0;
-const df = new Date(2022, 10, 31, 16, 0, 0, 0);
 const dfm = df.getTime();
 const d = new Date();
 let DT = new Date(dfm - d.getTime());
-document.getElementById("oraf").style.width = 100 - (DT.getHours()*60 + DT.getMinutes())/1.2 + "%";
+if (DT < 1200000 && DT > -1200000) {
+    document.getElementById("mid").style.opacity = (DT - 600000)/6000 + "%";}
+document.getElementById("oraf").style.width = 100 - ((DT.getHours()-1)*60 + DT.getMinutes())/1.2 + "%";
 function twochars(x) {
 	if (x.toString().length == 1) {return "0"+x;} else {return x;};
 }
 function pass(){
 	const d = new Date();
 	let DT = new Date(dfm - d.getTime());
-	document.getElementById("ora").innerHTML = "&#9200 &#9203 " + DT.getHours() + ":" + twochars(DT.getMinutes()) + ":" + twochars(DT.getSeconds());
+	document.getElementById("ora").innerHTML = /*&#9200*/ "&#9203 " + (DT.getHours()-1) + ":" + twochars(DT.getMinutes()) + ":" + twochars(DT.getSeconds());
 	n++;
-	if (n == 20) {document.cookie = "pos=" + pos; window.location.reload()};
+//	if (n == 20) {document.cookie = "pos=" + pos; window.location.reload()};
 };
 pass();
 setInterval('pass()', 1000);
