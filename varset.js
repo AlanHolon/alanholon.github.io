@@ -1,4 +1,5 @@
-var server_address = "http://localhost:8080/";
+// var server_address = "http://localhost:8080/";
+var server_address = "https://mmserver.onrender.com";
 const df = new Date(2022, 11, 15, 11, 43, 0, 0);
 
 function msg(x) {
